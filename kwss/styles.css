@@ -1,0 +1,1819 @@
+/* =======================home page=================================== */
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+.container{
+    display: grid;
+    grid-template-rows: 15% auto;
+    position: relative;
+    height: 100%;
+
+}
+.container .top-container{
+    width: 100%;
+    background-color: midnightblue;
+    position: sticky;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: 10% auto;
+}
+.logo img{
+    height: 100px;
+    width: 100px;
+    left: 3px;
+    margin-left: 40px;
+   
+
+}
+.container .top-container .menu-list{
+    text-align: end;
+    align-content: center;
+    margin-right: 100px;
+    font-size: 0.8rem;
+}
+.container .top-container ul {
+    text-transform: capitalize;
+}
+.container .top-container ul li{
+    display: inline;
+  
+    
+}
+.container .top-container ul li a{
+   
+    padding: 12px 10px;
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    border-bottom: 3px solid white;
+   
+
+}
+.container .top-container ul li a:hover{
+    background-color: white;
+    color: midnightblue;
+}
+.container .top-container .active {
+    background-color: white;
+    color: midnightblue;
+    
+}
+
+.container .bottom-container{
+    overflow: auto;
+    width: 100%;
+    padding: 0;
+}
+.container .bottom-container .welcome h1{
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+    padding:  0;
+    font-size: 2rem;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+.card-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    padding: 20px 10px;
+}
+.card-container>div{
+    background-color: midnightblue;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+
+.container .bottom-container .update-card ul{
+    list-style-type: circle;
+    font-size: 1rem;
+    text-align: left;
+   
+}
+.container .bottom-container .update-card ul li{
+    color: white;
+    padding: 15px;
+}
+.container .bottom-container .update-card ul li a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+.container .bottom-container .update-card ul li a span{
+    display: inline-block;
+    background-color: orangered;
+    border-radius: 50px;
+    padding: 10px;
+    animation: bounce ease-in-out 1000ms forwards infinite;
+    animation-timing-function: steps(8);
+}
+@keyframes bounce  {
+    from{transform: scale(0.8);}
+    50%{transform: scale(1);}
+   
+    
+}
+.container .bottom-container .joining-form{
+    height: 70vh;
+    width: 100%;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 40% auto;
+    padding: 0px ;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(bacooo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.container .bottom-container .joining-form .description-text{
+ 
+    text-align: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    width: 90%;
+    border-radius: 10px;
+}
+.container .bottom-container .joining-form .description-text p{
+    color: white;
+    font-size: 1.5rem;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+
+.container .bottom-container .joining-form .description-text a .link{
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+    border: 1px solid white;
+    width: 100px;
+    height: 70px;
+    background: transparent;
+    border-radius: 10px;
+}
+.container .bottom-container .joining-form .form-text{
+    text-align: center;
+    align-content: center;
+    width: 100%;
+}
+.container .bottom-container .joining-form .form-text form{
+    width: 90%;
+    margin: 0 auto;
+    height: 90%;
+    align-content: center;
+    border-radius: 10px;
+    border: 3px solid white;
+}
+.container .bottom-container .joining-form .form-text form h1{
+    color: white;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    text-decoration: underline;
+}
+.container .bottom-container .joining-form .form-text form .input-group{
+    padding: 5px;
+    
+}
+.container .bottom-container .joining-form .form-text form .input-group label{
+    display: block;
+    text-align: left;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: sans-serif;
+    color: white;
+}
+.container .bottom-container .joining-form .form-text form .input-group input{
+    width: 90%;
+    height: 20px;
+    padding: 10px;
+    font-size: 1.2rem;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.container .bottom-container .joining-form .form-text form .input-group input[type=file]{
+    border: none;
+    color: white;
+}
+.container .bottom-container .joining-form .form-text form .input-group input[type=submit]{
+     height: 40px;
+     width: 50%;
+     padding: 0;
+   
+}
+.container .bottom-container .joining-form .form-text form .input-group input[type=submit]:hover{
+    background-color: midnightblue;
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+.container .bottom-container .event-card {
+    background: url(Screenshot_20240414-233432~2.png);
+    background-position: center;
+    animation: changer 30000ms ease-in-out infinite forwards;
+    background-size: cover;
+
+}
+
+@keyframes changer{
+    25%{background-image: url(Screenshot_20240414-233635~2.png);}
+    50%{background-image: url(Screenshot_20240414-233405.png)}
+    75%{background-image: url(Screenshot_20240414-233340.png)}
+    100%{background-image: url(Screenshot_20240414-233715.png)}
+}
+
+/* =======================End of home page=================================== */
+
+/* ==========================admistration page========================= */
+
+.bottom-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+}
+.row{
+    padding-bottom: 200px;
+
+}
+
+.bottom-container .description {
+    font-size: 40px;
+    color: #333;
+    background-color: aqua;
+    border-radius: 10px;
+    padding: 50px;
+}
+.bottom-container .txt{
+    font-size: 27px;
+    color: #000;
+    margin-bottom: 30px;
+    
+}
+.tittle span{
+    font-size: 50px;
+    font-weight: 900;
+    text-decoration: underline;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+    color: midnightblue;
+}
+.container-teacher-details {
+    padding-top: 20px;
+}
+
+.teacher-row {
+    display: inline-block;
+    text-align: center;
+    margin: 20px;
+}
+
+.image-place {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    
+}
+
+.image-place img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.contact-detail {
+    margin-top: 10px;
+}
+
+.contact-detail .details {
+    width: 38px;
+    height: 38px;
+    margin: 0 5px;
+    display: inline-block;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.contact-detail .details:hover {
+    background-color: #555;
+}
+
+.teacher-row h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0;
+}
+
+.teacher-row i {
+    font-size: 14px;
+    color: #777;
+    text-transform: capitalize;
+}
+
+/* ==========================End css admistration========================= */
+
+/* ===========================result=========================================== */
+
+.bottom-container .result-category{
+  padding: 0;
+  margin-bottom: 400px;
+  overflow: hidden;
+  height: 90vh;
+  margin: 0;
+}
+.result-category .drpbtn{
+    background-color: midnightblue;
+    margin-top: 10px;
+    width: 150px;
+    height: 50px;
+    font-size: 1rem;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    cursor: pointer;
+
+}
+.result-category .dropdown{
+    position: relative;
+    display: inline-block;
+
+}
+.result-category .dropdown .dropdown-content{
+    position: absolute;
+    background-color: blue;
+    width: 100%;
+    display: none;
+}
+.result-category .dropdown .dropdown-content   a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-transform: capitalize;
+    padding: 12px 16px;
+    font-weight: 600;
+
+    
+}
+.result-category .dropdown .dropdown-content a:hover{
+    background-color: rgb(159, 191, 233);
+    color: midnightblue !important; 
+
+
+}
+.result-category .dropdown:hover .dropdown-content{
+    display: block;
+  
+}
+
+
+.bottom-container .result-category .display-card{
+    width: 90%;
+    height: 400px;
+    margin: 0 auto;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(Screenshot_20240414-233652~2.png);
+    margin-top: 40px;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    border-radius: 20px;
+}
+.bottom-container  .preparation{
+ background-color: rgb(179, 255, 229);
+ height: 90%;
+ margin-top: -50px;
+}
+.bottom-container  .preparation h1{
+    padding: 40px 0;
+    text-transform: capitalize;
+    font-size: 2.3rem;
+}
+.bottom-container  .preparation .card-card{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+}
+.bottom-container  .preparation .card-card>.card{
+    padding: 20px;
+    border: 5px solid black;
+    margin: 0 20px;
+    border-radius: 10px;
+}
+.bottom-container  .preparation .card-card>.card h2{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+}
+.bottom-container  .preparation .card-card>.card p{
+    font-size: 1.2rem;
+}
+.icon-about{
+    color: midnightblue;
+    font-size: 4rem;
+}
+.bottom-container .result-category .display-card h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.bottom-container .result-category  .display-card p{
+    font-size: 1.3rem;
+    color: rgba(255, 255, 255, 0.785);
+}
+/* ====================end of result============================= */
+
+/* ====================end of result year============================= */
+.bottom-container-result{
+display: grid;
+grid-template-columns: 15% auto;
+overflow: hidden;
+
+}
+.bottom-container-result .left-menu{
+    background-color:rgb(47, 47, 193);
+    position: sticky;
+    
+}
+.bottom-container-result .left-menu h1{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+.bottom-container-result .left-menu ul{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    margin-top: 10px;
+   
+}
+.bottom-container-result .left-menu ul li{
+    display: block;
+    margin: 0; 
+    padding: 1px 0;
+
+
+
+}
+.bottom-container-result .left-menu ul li .btn-btn{
+    background-color: midnightblue;
+    width: 100%;
+    height: 40px;
+    border: none;
+    color: white;
+}
+.bottom-container-result .left-menu .active{
+    text-decoration: underline;
+    font-size: 25px;
+}
+.bottom-container-result .left-menu ul .dropleft{
+    position: relative;
+}
+.bottom-container-result .left-menu ul .dropleft .dropleft-content {
+    background-color: midnightblue;
+    width: 100%;
+    position: absolute;
+    box-shadow: 0 0  10px black;
+    display: none;
+    margin-left:0.7px;
+}
+.bottom-container-result .left-menu ul .dropleft .dropleft-content a:hover {
+    background-color: white !important;
+    color: midnightblue;
+    text-decoration: none;
+    font-size: 1.3rem;
+    
+  
+}
+
+.bottom-container-result .left-menu ul li button:hover{
+    text-decoration: underline;
+    font-size: 25px;
+}
+.bottom-container-result .left-menu ul .dropleft:hover .dropleft-content{
+    display: inline-block;
+}
+
+
+.bottom-container-result .left-menu ul li a{
+    display: block;
+    width: 100%;
+    height:20px ;
+    text-decoration: none;
+    color: white;
+
+    font-size: 0.9rem;
+    text-transform: capitalize;
+    padding: 10px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: midnightblue;
+
+ 
+}
+.bottom-container-result .left-menu ul li a:hover{
+    text-decoration: underline;
+    font-size: 24px;
+}
+
+.bottom-container-result .result-category{
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    overflow-y: auto;
+}
+.bottom-container-result .table-container{
+    margin-top: 60px;
+    padding: 10px;
+    
+}
+.bottom-container-result .table-container .no-result{
+    font-size: 4rem;
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    font-weight: 700;
+    text-align: center;
+    color: midnightblue;
+    margin-top: 200px;
+    text-transform: capitalize;
+}
+.bottom-container-result .table-container table{
+    border-collapse: collapse;
+    width: 100%;
+    height: 100%;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.bottom-container-result .table-container header{
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: midnightblue;
+    font-weight: 600;
+}
+.bottom-container-result .table-container table th,.bottom-container-result .table-container table td{
+    border: 1px solid black;
+    text-transform: uppercase;
+    
+}
+/* ================================about======================= */
+
+.about-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    overflow-y: auto;
+}
+.about-content .about-card-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+.about-content .about-card-container .card{
+    background-color: rgb(253, 250, 250);
+    width: 80%;
+    height: 80%;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+}
+.about-content .header{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+    color: midnightblue;
+    font-size: 4rem;
+}
+.about-content .about-card-container .card h3{
+    font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+}
+.about-content .about-card-container .card p{
+    font-size: 1rem;
+    font-weight: 500;
+}
+.about-content h1,
+.about-content h2 {
+    color: midnightblue;
+    margin-bottom: 20px;
+    font-size: 3rem;
+    
+}
+
+.about-content p {
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+    font-weight: 600;
+    
+}
+
+.about-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-content ul li {
+    background-size: 20px;
+    padding-left: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.menu{
+    display: none;
+    font-size: 0;
+}
+
+
+/* ================================End about======================= */
+
+
+/* ================================contact========================== */
+.bottom-container .row-contact{
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+.bottom-container .text-center{
+    font-size: 2rem;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+    color: midnightblue;
+}
+.bottom-container .row-contact .col-contact-1{
+    padding: 0;
+    position: relative;
+}
+.bottom-container .row-contact .col-contact-1 h2{
+    font-size: 2rem;
+    padding: 1px;
+    margin: 0;
+    text-transform: capitalize;
+}
+.bottom-container .row-contact .col-contact-1 .control-group{
+    width: 100%;
+    padding: 10px;
+}
+.bottom-container .row-contact .col-contact-1 .control-group input , textarea{
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+}
+.bottom-container .row-contact .col-contact-1 button{
+    width: 40%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    position: absolute;
+    background-color: aqua;
+    left: 60px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+   
+}
+.bottom-container .row-contact .col-contact-1 button:hover{
+    background-color: aquamarine;
+}
+
+.bottom-container .row-contact .col-contact-2 .contact-det{
+   position: relative;
+   padding: 1px;
+   
+
+}
+
+.bottom-container .row-contact .col-contact-2 .contact-det .details{
+ text-align: left;
+ margin-left: 100px;
+}
+.bottom-container .row-contact .col-contact-2 .contact-det h5{
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 2px;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+}
+.bottom-container .row-contact .col-contact-2 .contact-det p{
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 5px;
+}
+.bottom-container .socia-net h1{
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: midnightblue;
+    font-size: 2rem;
+  
+} 
+.bottom-container .socia-net{
+    
+    margin-top: 100px;
+    
+}
+.bottom-container .socia-net .channel{
+   display: inline-block;
+   margin-left: 30px;
+  
+  
+} 
+.bottom-container .socia-net .channel img{
+    display: inline-block;
+    cursor: pointer;
+    width: 70px;
+    height: 50px;
+    border-radius: 10px;
+   
+ } 
+ .bottom-container .socia-net .channel p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+ }
+ .icon-contact{
+    color: midnightblue;
+    left: 30px;
+    position: absolute;
+    font-size: 3rem;
+    margin-top: 10px;
+
+ }
+ /* =======================================End contact========================== */
+
+
+ /* ==========================footer===================================== */
+ .footer{
+     height: 30vh;
+     padding: 0;
+     background-color: rgba(235, 130, 130, 0.125);
+     margin-top: 100px;
+ }
+ .footer .footer-card{
+    display: grid;
+    grid-template-columns:  33%  33% 33%;
+    background-color: rgba(235, 130, 130, 0.125);
+ }
+ .footer .footer-card .card{
+    position: relative;
+    padding: 40px 0;
+ }
+ .footer .footer-card .card .card-details h1{
+ text-transform: capitalize;
+ font-size: 1.5rem;
+ }
+ .footer .footer-card .card .channe-descripition{
+    font-size: 1rem;
+ }
+ .footer .footer-card .card .channels-icon{
+    display: inline-block;
+    width: 100%;
+   
+    
+ }
+ .footer .footer-card .card .channels-icon .channel {
+    display: inline-block;
+    
+ }
+ .footer .footer-card .card .channels-icon .channel a{
+   font-size: 2rem;
+   padding: 10px;
+    
+ }
+ .footer .footer-card .card-links{
+    padding: 30px;
+    border-left: 2px solid midnightblue;
+    border-right: 2px solid midnightblue;
+    height: 80%;
+ }
+ .footer .footer-card .card-links h3{
+   font-size: 1.5rem;
+   text-transform: capitalize;
+ }
+ .footer .footer-card  ul {
+    list-style: none;
+}
+ .footer .footer-card  ul li {
+        padding: 5px;
+ }
+ .footer .footer-card  ul li a {
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: midnightblue;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+    font-weight: 700;
+    margin-right: 30px;
+}
+.footer .footer-card  ul li a:hover{
+    background-color: midnightblue;
+    color: white;
+    text-decoration: underline;
+    font-weight: 100;
+}
+
+.footer .footer-card .card-contact .contact-det{
+    position: relative;
+    text-align: left;
+    margin-left: 20px;
+   
+}
+.footer .footer-card .card-contact .contact-det .details{
+    margin-left: 50px;
+    padding: 0;
+}
+.footer .footer-card .card-contact .contact-det .details h5{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.icon{
+    color: midnightblue;
+    left: 0;
+    position: absolute;
+    font-size: 2rem;
+    margin-top: 20px;
+
+ }
+ .icon-home{
+    color: midnightblue;
+    font-size: 1.5rem;
+ }
+ .icon-home:hover{
+    font-size: 2rem;
+    border-bottom: 2px solid midnightblue;
+ }
+ .footer-text p{
+    font-size: 1.5rem;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+    text-transform: capitalize;
+    background-color: midnightblue;
+    color: white;
+    bottom: 0 ;
+    width: 100%;
+    margin: 0;
+
+ }
+ .menu{
+    display: none;
+ }
+ .footer .footer-card .card-contact .contact-det .details h5{
+    font-size: 1rem;
+}
+.footer .footer-card .card-contact .contact-det .details p{
+     font-size: 0.9rem;
+     margin-top: -13px;
+}
+/* =======================end of footer ============================= */
+
+
+
+
+
+@media (max-width: 680px) {
+/* =============================home page========================== */
+    .container {
+        grid-template-rows: auto auto;
+        overflow: hidden;
+    }
+
+
+    .container .bottom-container {
+      overflow-x: hidden;
+    }
+    .logo img {
+        height: 50px;
+        width: 50px;
+        align-content: center;
+        margin-top: 20px;
+    }
+    .container .top-container{
+   
+        top: 0;
+        height: 100%;
+        z-index: 1;
+        margin-bottom: 0px;
+        display: grid;
+        grid-template-columns: 1% auto;
+    }
+ 
+    .container .top-container .menu-list{
+        text-align: end;
+        align-content: center;
+        margin-right: 2px;
+        font-size: 0.5rem;
+    }
+   
+    .container .top-container ul li{
+        display: inline;
+      
+        
+    }
+    .container .top-container ul li a{
+        padding: 5px;
+        padding-left: 5px;
+        margin: 2px;
+      
+        border-bottom: 3px solid white;
+       
+    
+    }
+    .about-content .about-card-container {
+        grid-template-columns: 1fr; 
+        gap: 15px; 
+        margin-left: 10px;
+        margin-top: 40px;
+        
+    }
+
+    .about-content .about-card-container .card{
+        background-color: rgb(253, 250, 250);
+        width: 80%;
+        height: 80%;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 0 5px black;
+    }
+
+    .card-container {
+        gap: 5px;
+        padding: 5px;
+        grid-template-columns: 1fr;
+    }
+    .container .bottom-container .update-card{
+        background: linear-gradient(to top,rgba(0,0,0,0.6)50%,rgba(0,0,0,0.8)50%), url(Screenshot_20240414-233432~2.png);
+        background-position: center;
+        animation: changer 30000ms ease-in-out infinite forwards;
+        background-size: cover;
+        
+    }
+        
+    @keyframes changer{
+        25%{background-image:linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(Screenshot_20240414-233635~2.png);}
+        50%{background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(Screenshot_20240414-233405.png)}
+        75%{background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(Screenshot_20240414-233340.png)}
+        100%{background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(Screenshot_20240414-233715.png)}
+    
+    }
+    .container .bottom-container .event-card{
+        display: none;
+    }
+    .container .bottom-container .welcome h1 {
+        font-size: 0.8rem;
+        padding: 10px;
+    }
+
+    .container .bottom-container .update-card ul {
+        font-size: 0.8rem;
+       padding: 0 ;
+       margin: 0;
+    }
+    .container .bottom-container .update-card ul li a span{
+
+        border-radius: 50px;
+        padding: 2px 5px;
+        font-size: 0.5rem;
+    }
+    .container .bottom-container .update-card ul li{
+        padding: 10px;
+    }
+    .container .bottom-container .joining-form{
+        height: 70vh;
+        width: 100%;
+        margin-top: 50px;
+        grid-template-columns: 1fr;
+        padding: 0px ;
+       
+    }
+
+    .container .bottom-container .joining-form .description-text{
+     margin-top: -50px;
+        padding: 0;
+        width: 90%;
+        border-radius: 10px;
+    }
+    
+    .container .bottom-container .joining-form .description-text a .link{
+        font-size: 2rem;
+        cursor: pointer;
+        width: 50px;
+        height: 30px;
+      
+    }
+    .container .bottom-container .joining-form .form-text{
+        margin-top: -30px;
+    }
+    .container .bottom-container .joining-form .form-text form{
+        width: 90%;
+        margin: 0 auto;
+        height: 90%;
+        padding: 0 5px ;
+    }
+    .container .bottom-container .joining-form .form-text form h1{
+        color: white;
+        font-size: 2rem;
+    }
+    .container .bottom-container .joining-form .form-text form .input-group{
+        padding:  0;
+        
+    }
+    .container .bottom-container .joining-form .form-text form .input-group label{
+        font-size: 1rem;
+    }
+    .container .bottom-container .joining-form .form-text form .input-group input{
+        width: 90%;;
+        padding: 5px;
+        font-size: 0.8rem;
+        height: 10px;
+        border-radius: 5px;
+    }
+    .container .bottom-container .joining-form .form-text form .input-group input[type=file]{
+        border: none;
+        color: white;
+        height: 15px ;
+    }
+    .container .bottom-container .joining-form .form-text form .input-group input[type=submit]{
+         margin-top: 10px;
+         width: 40% !important;
+         height: 30px;
+    }
+
+   
+        
+    
+    .container .bottom-container .joining-form .description-text p,
+    .container .bottom-container .joining-form .form-text form h1 {
+        font-size: 1rem;
+    }
+
+    .container .bottom-container .joining-form .description-text a .link {
+        font-size: 1.7rem;
+    }
+
+    .container .bottom-container .joining-form .form-text form .input-group input[type=submit] {
+        height: 30px;
+        width: 70%;
+        font-size: 0.9rem;
+    }
+
+/* ==============================End home=========================================== */
+
+
+/* =============================adminstration page========================== */
+.bottom-container {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+}
+
+.bottom-container .description {
+    font-size: 1rem;
+    color: #333;
+    background-color: aqua;
+    padding: 10px;
+}
+.bottom-container .txt{
+    font-size: 0.9rem;
+    color: #000;
+    margin-bottom: 30px;
+    
+}
+.tittle span{
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-decoration: underline;
+    font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+    color: midnightblue;
+}
+.container-teacher-details {
+    padding-top: 5px;
+}
+
+.teacher-row {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.image-place {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    
+}
+
+.image-place img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.contact-detail {
+    margin-top: 10px;
+}
+
+.contact-detail .details {
+    width: 38px;
+    height: 38px;
+    margin: 0 5px;
+    display: inline-block;
+    color: #fff;
+    background-color: #333;
+    text-align: center;
+    line-height: 38px;
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+.contact-detail .details:hover {
+    background-color: #555;
+}
+
+.teacher-row h4 {
+    font-size: 18px;
+    text-transform: capitalize;
+    padding: 0;
+}
+
+.teacher-row i {
+    font-size: 14px;
+    color: #777;
+    text-transform: capitalize;
+}
+/* ===========================End of adminstration page======================= */
+
+
+/* ===========================result page=====================================*/
+.bottom-container{
+    text-align: center;
+    font-family: Arial, sans-serif;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding: 0;
+}
+.bottom-container .result-category{
+ padding: 0;
+}
+.result-category .drpbtn{
+
+    width: 70px;
+    height: 20px;
+    font-size: 0.4rem;
+ 
+}
+.bottom-container  .preparation{
+    background-color: transparent;
+    height: 90%;
+    margin-top: -100px;
+   }
+   .bottom-container  .preparation h1{
+       padding: 20 0px;
+       font-size: 0.9rem;
+   }
+   .bottom-container  .preparation .card-card{
+       display: grid;
+       grid-template-columns: 1fr;
+       padding: 10px 0;
+       margin-top: -50px;
+   }
+   .bottom-container  .preparation .card-card>.card{
+       padding: 2px 0;
+       border: 5px solid midnightblue;
+       margin: 10px;
+       border-radius: 10px;
+   }
+   .bottom-container  .preparation .card-card>.card h2{
+       text-transform: capitalize;
+       font-size: 0.9rem;
+   }
+   .bottom-container  .preparation .card-card>.card p{
+       font-size: 0.7rem;
+   }
+   
+
+.result-category .dropdown .dropdown-content   a{
+  
+    font-size: 0.7rem;
+    padding: 5px;
+
+    
+}
+
+.bottom-container .result-category .display-card{
+    height: 300px;
+    width: 100%;
+    border-radius: 0;
+   
+}
+.icon-about{
+    color: midnightblue;
+    font-size: 2rem;
+}
+.bottom-container .result-category .display-card h2{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.bottom-container .result-category  .display-card p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.785);
+}
+/* ===========================End of result page=============================== */
+
+
+/* ====================result year============================= */
+    .bottom-container-result{
+    grid-template-columns: 1fr;
+    overflow: hidden;
+    
+    }
+    .bottom-container-result .left-menu{
+        background-color:rgb(47, 47, 193);
+        position: sticky;
+        height: 70%;
+        
+    }
+    .bottom-container-result .left-menu h1{
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1rem;
+    }
+    .bottom-container-result .left-menu ul{
+
+        margin: 0;
+        padding: 0;
+        display: block;
+        margin-top: 10px;
+       
+    }
+    .bottom-container-result .left-menu ul li{
+        margin: 0; 
+        padding: 1px 0;
+    
+    }
+    .bottom-container-result .left-menu ul .dropleft{
+        position: relative;
+        display: inline-block;
+        padding: 0px ;
+
+    }
+    .menu{
+        font-size: 1rem;
+    }
+    .bottom-container-result .left-menu ul .dropleft .dropleft-content a{
+        margin: 0;
+        padding:3px ;
+    }
+    .bottom-container-result .left-menu ul .dropleft .dropleft-content {
+
+        width: 100%;
+        position: absolute;
+        box-shadow: 0 0  10px black;
+        position: absolute;
+        width: 100%;
+        display: none;
+    }
+    .bottom-container-result .left-menu ul{
+        padding: 0;
+        background-color: midnightblue;
+        text-align: center;
+    }
+    .bottom-container-result .left-menu ul li{
+        width: 22%;
+        margin: 0;
+        
+    }
+    .bottom-container-result .left-menu ul li .btn-btn{
+    
+        height: 30px;
+        font-size: 1rem;
+        width: 100%;
+
+    }
+    .result-category .dropdown .dropdown-content   a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-transform: capitalize;
+        padding: 12px 16px;
+        font-weight: 600;
+    
+        
+    }
+    .result-category .dropdown .dropdown-content a:hover{
+        background-color: rgb(159, 191, 233);
+        color: midnightblue !important; 
+    
+    
+    }
+    .result-category .dropdown:hover .dropdown-content{
+        display: block;
+      
+    }
+    
+  
+    .bottom-container-result .left-menu ul .dropleft .dropleft-content a:hover {
+        background-color: white !important;
+        color: midnightblue;
+        text-decoration: none;
+        font-size: 1.3rem;
+        
+      
+    }
+    
+    .bottom-container-result .left-menu ul li button:hover{
+        text-decoration: underline;
+        font-size: 25px;
+    }
+    .bottom-container-result .left-menu ul .dropleft:hover .dropleft-content{
+        display: block;
+    }
+    
+    
+    .bottom-container-result .left-menu ul li a{
+        display: block;
+        width: 100%;
+        height:20px ;
+        text-decoration: none;
+        color: white;
+    
+        font-size: 0.9rem;
+        text-transform: capitalize;
+        padding: 10px 0;
+        text-align: center;
+        cursor: pointer;
+        background-color: midnightblue;
+    
+     
+    }
+    .bottom-container-result .left-menu ul li a:hover{
+        text-decoration: underline;
+        font-size: 24px;
+    }
+    .result-category .dropdown{
+        position: relative;
+        display: inline-block;
+    
+    }
+    .result-category .dropdown .dropdown-content{
+        position: absolute;
+        background-color: blue;
+        width: 100%;
+        display: none;
+    }
+    .result-category .dropdown .dropdown-content   a{
+        text-decoration: none;
+        color: white;
+        display: block;
+        text-transform: capitalize;
+        font-weight: 600;
+        font-size: 0.6rem;
+        padding: 5px;
+    
+        
+    }
+    .result-category .dropdown .dropdown-content a:hover{
+        background-color: rgb(159, 191, 233);
+        color: midnightblue !important; 
+    
+    
+    }
+    
+    .bottom-container-result .left-menu .active{
+        text-decoration: underline;
+        font-size: 25px;
+    }
+  
+    
+    
+    .bottom-container-result .result-category{
+        text-align: center;
+        align-items: center;
+        height: 100%;
+        overflow-y: auto;
+    }
+    .bottom-container-result .table-container{
+        margin-top: 60px;
+        padding: 5px;
+        
+    }
+    .bottom-container-result .table-container .no-result{
+        font-size: 2rem;
+        font-family: 'Comic Sans MS', 'Comic Sans', cursive;
+        font-weight: 700;
+        text-align: center;
+        color: midnightblue;
+        margin-top: 100px;
+        text-transform: capitalize;
+    }
+    .bottom-container-result .table-container table{
+        border-collapse: collapse;
+        width: 100%;
+        height: 100%;
+        font-size: 0.4rem;
+        font-weight: 500;
+    }
+    .bottom-container-result .table-container header{
+        font-size: 1rem;
+        text-transform: uppercase;
+        color: midnightblue;
+        font-weight: 600;
+        margin-top: -50px;
+    }
+    .bottom-container-result .table-container table th,.bottom-container-result .table-container table td{
+        border: 1px solid black;
+        text-transform: uppercase;
+        
+    }
+    /* ================================about======================= */
+    
+    .about-content .header{
+
+        font-size: 2rem;
+    }
+
+    .about-content .about-card-container .card p{
+        font-size: 0.7rem;
+        text-align: justify;
+    }
+    .about-content h1,
+    .about-content h2 {
+        color: midnightblue;
+        margin-bottom: 20px;
+        font-size: 1.2rem;
+        
+    }
+    
+    .about-content p {
+        margin-bottom: 10px;
+        font-size: 0.6rem;
+        font-weight: 900;
+        text-align: center;
+        
+    }
+    
+     /* ===============================End result========================== */
+
+    /* ===============================contact========================== */
+    .bottom-container .row-contact{
+        grid-template-columns: 1fr;
+    }
+    .bottom-container .text-center{
+        font-size: 1rem;
+    
+    }
+    .bottom-container .row-contact .col-contact-1{
+        padding: 5px 0;
+    }
+    .bottom-container .row-contact .col-contact-1  h2{
+        margin-left: 0px;
+        font-size: 1rem;
+    }
+    .bottom-container .row-contact .col-contact-1 .control-group{
+        width: 90%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .bottom-container .row-contact .col-contact-1 .control-group input {
+        width: 70%;
+        height: 3px;
+        padding: 10px;
+    }
+    .bottom-container .row-contact .col-contact-1 .control-group textarea{
+        width: 70%;
+        height: 50px;
+
+    }
+    .bottom-container .row-contact .col-contact-1 button{
+        width: 25%;
+        font-size: 0.5rem;
+        height: 30px;
+        font-weight: 800;
+        border-radius: 10px;
+        left: 50px;
+       
+        
+       
+    }
+  
+    
+    .bottom-container .row-contact .col-contact-2 {
+       position: relative;
+       padding: 10px;
+       margin-top: 100px;
+       border-top: 4px solid midnightblue;
+       
+    
+    }
+    .bottom-container .row-contact .col-contact-2 h5{
+        font-size: 1rem !important;
+    }
+    .bottom-container .row-contact .col-contact-2 p{
+        font-size: 0.9rem !important;
+    }
+    .bottom-container .socia-net{
+        margin: 0 auto;
+    }
+
+    .bottom-container .socia-net h1{
+        text-decoration: underline;
+        text-transform: capitalize;
+        color: midnightblue;
+        font-size: 1rem;
+        font-weight: 900;
+      
+    } 
+ 
+
+    .bottom-container .socia-net .channel img{
+        display: inline-block;
+        cursor: pointer;
+        width: 50px;
+        height: 30px;
+        border-radius: 10px;
+       
+     } 
+     .bottom-container .socia-net .channel p{
+        font-size: 0.8rem;
+        font-weight: 600;
+        font-family:'Comic Sans MS', 'Comic Sans', cursive ;
+     }
+     .icon-contact{
+        color: midnightblue;
+        left: 30px;
+        position: absolute;
+        font-size: 1.5rem;
+        margin-top: 10px;
+    
+     }
+    
+    /* ===============================End contact========================== */
+    
+
+/* =============================footer=========================================== */
+    .footer{
+        height: 50vh;
+        margin-top: 100px;
+        background-color: rgba(235, 130, 130, 0.125);
+        margin: 0;
+    }
+    .footer .footer-card{
+       grid-template-columns: 1fr;
+    }
+    .footer .footer-card .card{
+       padding: 20px;
+    }
+    .footer .footer-card .card .card-details h1{
+        font-size: 1.2rem;
+        margin-top: 10px;
+        text-align: left;
+    }
+    .footer .footer-card .card .channe-descripition{
+       font-size: 0.8rem;
+       text-align: left;
+    }
+   
+    .footer .footer-card .card .channels-icon .channel a{
+      font-size: 1rem;
+      padding: 5px;
+       
+    }
+    .footer .footer-card .card-links{
+       padding: 10px;
+       height: 60%;
+       border: none;
+       text-align: left;
+    }
+    .footer .footer-card .card-links h3{
+      font-size: 1.2rem;
+    }
+    .footer .footer-card .card-links  a{
+        font-weight: 900;
+    }
+    .menu{
+        color: midnightblue;
+        font-weight: 900;
+        margin-left: 10px;
+
+    }
+    .footer .footer-card  ul {
+       margin-left: -40px ;
+   }
+    .footer .footer-card  ul li {
+           padding: 5px;
+    }
+    .footer .footer-card  ul li a {
+       padding: 10px;
+       font-size: 0.9rem;
+   }
+   
+   .footer .footer-card .card-contact .contact-det{
+       position: relative;
+       text-align: left;
+       margin-left: 20px;
+       margin-top: -20px;
+      
+   }
+   .footer .footer-card .card-contact .contact-det .details{
+       margin-left: 50px;
+   }
+   .footer .footer-card .card-contact .contact-det .details h5{
+       font-size: 1rem;
+   }
+   .footer .footer-card .card-contact .contact-det .details p{
+        font-size: 0.9rem;
+        margin-top: -13px;
+   }
+   .icon{
+
+       font-size: 1rem;
+       margin-top: 20px;
+   
+    }
+
+    .footer-text p{
+       font-size: 0.7rem;
+       padding: 10px ;
+       bottom: 0;
+       width: 100%;
+   
+    }
+    
+}
+@media screen and  (max-width:1024p) {
+
+ 
+    .container .top-container .menu-list{
+        text-align: center;
+        align-content: center;
+        margin-right: 2px;
+        font-size: 1rem;
+        padding: 5px;
+    }
+    .container .top-container ul li a{
+        padding: 10px;
+        padding-left: 5px;
+        margin: 2px;
+    }
+    .result-category .drpbtn{
+        width: 150px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+    .result-category .dropdown .dropdown-content   a{  
+        font-size: 1rem;  
+    }
+    .container .bottom-container .joining-form{
+        height: 55vh;
+        width: 100%;
+        margin-top: 50px;
+        padding: 0px ;
+       
+    }
+    .container .bottom-container .joining-form .form-text{
+        margin-top: -30px;
+    }
+    .container .bottom-container .joining-form .form-text form{
+        width: 90%;
+        margin: 0 auto;
+        height: 80%;
+        padding: 0 5px ;
+    }
+    
+    .container .bottom-container .joining-form .form-text form h1{
+        color: white;
+        font-size: 2rem;
+    }
+    .container .bottom-container .joining-form .form-text form .input-group{
+        padding:  0;
+        
+    }
+    .container .bottom-container .joining-form .form-text form .input-group label{
+        font-size: 1.3rem;
+    }
+    .container .bottom-container .joining-form .form-text form .input-group input{
+        width: 90%;;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    .container .bottom-container .joining-form .form-text form .input-group input[type=file]{
+        border: none;
+        color: white;
+    }
+    .container .bottom-container .joining-form .form-text form .input-group input[type=submit]{
+         margin-top: 10px;
+    }
+   
+        
+    
+    .container .bottom-container .joining-form .description-text p,
+    .container .bottom-container .joining-form .form-text form h1 {
+        font-size: 1rem;
+    }
+
+    .container .bottom-container .joining-form .description-text a .link {
+        font-size: 1.7rem;
+    }
+
+    .container .bottom-container .joining-form .form-text form .input-group input[type=submit] {
+        height: 30px;
+        width: 70%;
+        font-size: 0.9rem;
+    }
+    .footer{
+        height: 20vh;
+        margin-top: 100px;
+        background-color: rgba(235, 130, 130, 0.125);
+        margin: 0;
+    }
+    
+     .footer .footer-card .card{
+        padding: 20px;
+     }
+     .footer .footer-card .card .card-details h1{
+         font-size: 1.2rem;
+         margin-top: 10px;
+         text-align: left;
+     }
+     .footer .footer-card .card .channe-descripition{
+        font-size: 0.8rem;
+        text-align: left;
+     }
+    
+     .footer .footer-card .card .channels-icon .channel a{
+       font-size: 1rem;
+       padding: 5px;
+        
+     }
+     .footer .footer-card .card-links{
+        padding: 10px;
+        height: 60%;
+        border: none;
+        text-align: left;
+     }
+     .footer .footer-card .card-links h3{
+       font-size: 1.2rem;
+     }
+     .footer .footer-card .card-links  a{
+         font-weight: 900;
+     }
+     .menu{
+         color: midnightblue;
+         font-weight: 900;
+         margin-left: 10px;
+ 
+     }
+     .footer .footer-card  ul {
+        margin-left: -40px ;
+    }
+     .footer .footer-card  ul li {
+            padding: 5px;
+     }
+     .footer .footer-card  ul li a {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .footer .footer-card .card-contact .contact-det{
+        position: relative;
+        text-align: left;
+        margin-left: 20px;
+        margin-top: -20px;
+       
+    }
+    .footer .footer-card .card-contact .contact-det .details{
+        margin-left: 50px;
+    }
+    .footer .footer-card .card-contact .contact-det .details h5{
+        font-size: 1rem;
+    }
+    .footer .footer-card .card-contact .contact-det .details p{
+         font-size: 0.9rem;
+         margin-top: -13px;
+    }
+    .icon{
+ 
+        font-size: 1rem;
+        margin-top: 20px;
+    
+     }
+ 
+}
